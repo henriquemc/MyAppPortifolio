@@ -3,9 +3,6 @@ node(){
   checkout scm
   echo "Building with grails"
   
-  grails {
-      useWrapper true
-      targets(['test'])
-  }
-
+  sh "chmod +x gradlew"
+  sh "./gradlew clean"
 }
