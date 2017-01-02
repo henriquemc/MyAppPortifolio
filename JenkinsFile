@@ -1,5 +1,6 @@
 node(){
 
+  checkout scm
   echo "Building with grails"
   
   grails {
